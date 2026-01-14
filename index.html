@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="darkModeToggle" class="dark-mode-btn">
+    🌙 Dark Mode
+</button>
+
     <!-- Header/Hero Section -->
     <header class="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br p-6 md:p-10 text-white shadow-lg">
+        
         <div class="absolute inset-0 z-0 opacity-10">
             <!-- Abstract background pattern -->
             <svg class="h-full w-full" fill="none" viewBox="0 0 100 100">
@@ -120,11 +125,17 @@
                 <div class="skill-card">Apache Flink</div>
                 <div class="skill-card">Apache Cassandra</div>
                 <div class="skill-card">Apache Kafka</div>
+                <div class="skill-card">Apache Zookeeper</div>
+                <div class="skill-card">Apache Sqoop</div>
+                <div class="skill-card">HDFS</div>
+                <div class="skill-card">MapReduce</div>
+                <div class="skill-card">YARN</div>
             </div>
         </div>
     </section>
 
     
+
     <section id="projects" class="bg-white">
         <div class="mx-auto max-w-6xl">
             <h2>
@@ -273,30 +284,417 @@
                         </div>
                     </div>
                 </div>
+                <!-- Project Card: Reinforcement Learning Robot Navigation -->
+<div class="project-card">
+    <img
+        src="./pics/ReinforcementLearning.png"
+        alt="Reinforcement Learning Robot Navigation using DQN"
+        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E8F5E9/2E7D32?text=Reinforcement+Learning+Project';"
+    />
+
+    <div class="project-card-content">
+        <h3 class="mb-2 text-xl font-semibold text-gray-900">
+            Reinforcement Learning Robot Navigation
+        </h3>
+
+        <p class="mb-4 text-gray-700">
+            Designed and implemented a <strong>Reinforcement Learning (RL)</strong>-based robot navigation system</strong>
+            using <strong>Deep Q-Networks (DQN)</strong>. 
+        </p>
+
+        <div class="flex space-x-4">
+            <!-- GitHub Link -->
+            <a
+                href="https://github.com/Hithaish2003/your-rl-project-repo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn github"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 7 9.5.5.1.7-.2.7-.5v-1.4c-2.8.6-3.4-1.1-3.4-1.1-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1-.1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3 0-2.7 0 0 .8-.3 2.6 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 1.8-1.3 2.6-1 2.6-1 .4 1.4.1 2.4 0 2.7.6.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.5 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5C19.1 20.2 22 16.4 22 12 22 6.5 17.5 2 12 2z"/>
+                </svg>
+                GitHub
+            </a>
+
+            <!-- Demo / Visualization -->
+            <a
+                href="https://github.com/Hithaish2003/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn live-demo"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                Visualization
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Project Card: Neon Mirror Pose Clone -->
+<div class="project-card">
+    <img
+        src="./pics/NeonPoseClone.png"
+        alt="Neon Mirror Pose Clone using MediaPipe and OpenCV"
+        onerror="this.onerror=null; this.src='https://placehold.co/600x400/0F172A/38BDF8?text=Neon+Mirror+Pose+Clone';"
+    />
+
+    <div class="project-card-content">
+        <h3 class="mb-2 text-xl font-semibold text-gray-900">
+            Neon Mirror Pose Clone (Computer Vision)
+        </h3>
+
+        
+
+        <p class="mb-4 text-gray-700">
+            Implemented <strong>landmark mirroring using coordinate inversion</strong>,
+            <strong>layer-based masking</strong> to isolate neon highlights, and
+            <strong>real-time rendering pipelines</strong> inspired by AR-style visual effects.
+        </p>
+
+        <div class="flex space-x-4">
+            <!-- GitHub Link -->
+            <a
+                href="https://github.com/Hithaish2003/neon-mirror-pose-clone"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn github"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 7 9.5.5.1.7-.2.7-.5v-1.4c-2.8.6-3.4-1.1-3.4-1.1-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1-.1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3 0-2.7 0 0 .8-.3 2.6 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 1.8-1.3 2.6-1 2.6-1 .4 1.4.1 2.4 0 2.7.6.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.5 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5C19.1 20.2 22 16.4 22 12 22 6.5 17.5 2 12 2z"/>
+                </svg>
+                GitHub
+            </a>
+
+            <!-- Demo / Visualization -->
+            <a
+                href="https://github.com/Hithaish2003/neon-mirror-pose-clone#demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn live-demo"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                Demo
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Project Card: Text Summarizer using NLP Transformer -->
+<div class="project-card">
+    <img
+        src="./pics/TextSummarizer.png"
+        alt="Text Summarizer using NLP Transformer Models"
+        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E3F2FD/0D47A1?text=Text+Summarizer+NLP+Transformer';"
+    />
+
+    <div class="project-card-content">
+        <h3 class="mb-2 text-xl font-semibold text-gray-900">
+            Text Summarizer using NLP Transformer
+        </h3>
+
+        <p class="mb-4 text-gray-700">
+            Developed an <strong>automatic text summarization system</strong> using
+            <strong>Transformer-based NLP models</strong> to generate concise and
+            meaningful summaries from long-form text documents. The system captures
+            contextual semantics using <strong>self-attention mechanisms</strong>
+            instead of rule-based or extractive approaches.
+        </p>
+
+        <p class="mb-4 text-gray-700">
+            Implemented the pipeline using <strong>pre-trained Transformer architectures</strong>,
+            tokenization strategies, and sequence-to-sequence learning. 
+        </p>
+
+        <div class="flex space-x-4">
+            <!-- GitHub Link -->
+            <a
+                href="https://github.com/Hithaish2003/text-summarizer-transformer"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn github"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 7 9.5.5.1.7-.2.7-.5v-1.4c-2.8.6-3.4-1.1-3.4-1.1-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1-.1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3 0-2.7 0 0 .8-.3 2.6 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 1.8-1.3 2.6-1 2.6-1 .4 1.4.1 2.4 0 2.7.6.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.5 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5C19.1 20.2 22 16.4 22 12 22 6.5 17.5 2 12 2z"/>
+                </svg>
+                GitHub
+            </a>
+
+            <!-- Demo / Visualization -->
+            <a
+                href="https://github.com/Hithaish2003/text-summarizer-transformer#demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn live-demo"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                Demo
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Project Card: Full Stack Movie Reservation System -->
+<div class="project-card">
+    <img
+        src="./pics/MovieReservationSystem.png"
+        alt="Full Stack Movie Reservation System using Python Flask"
+        onerror="this.onerror=null; this.src='https://placehold.co/600x400/1E293B/FACC15?text=Movie+Reservation+System+Flask';"
+    />
+
+    <div class="project-card-content">
+        <h3 class="mb-2 text-xl font-semibold text-gray-900">
+            Full Stack Movie Reservation System (Flask)
+        </h3>
+
+        <p class="mb-4 text-gray-700">
+            Designed and developed a <strong>full stack movie reservation web application</strong>
+            using <strong>Python Flask</strong> that allows users to browse movies, view showtimes,
+            select seats, and book tickets through an interactive interface.
+        </p>
+
+        <p class="mb-4 text-gray-700">
+            Implemented <strong>user authentication</strong>, <strong>seat availability management</strong>,
+            and <strong>database-driven booking workflows</strong>. The backend handles real-time seat updates
+            and booking validation, while the frontend provides a responsive and user-friendly experience.
+        </p>
+
+        <div class="flex space-x-4">
+            <!-- GitHub Link -->
+            <a
+                href="https://github.com/Hithaish2003/movie-reservation-system-flask"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn github"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 7 9.5.5.1.7-.2.7-.5v-1.4c-2.8.6-3.4-1.1-3.4-1.1-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1-.1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3 0-2.7 0 0 .8-.3 2.6 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 1.8-1.3 2.6-1 2.6-1 .4 1.4.1 2.4 0 2.7.6.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.5 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5C19.1 20.2 22 16.4 22 12 22 6.5 17.5 2 12 2z"/>
+                </svg>
+                GitHub
+            </a>
+
+            <!-- Demo -->
+            <a
+                href="https://github.com/Hithaish2003/movie-reservation-system-flask#demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn live-demo"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                Demo
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Project Card: Music Recommendation System -->
+<div class="project-card">
+    <img
+        src="./pics/MusicRecommendationSystem.png"
+        alt="Music Recommendation System using React and MongoDB"
+        onerror="this.onerror=null; this.src='https://placehold.co/600x400/0F172A/22C55E?text=Music+Recommendation+System';"
+    />
+
+    <div class="project-card-content">
+        <h3 class="mb-2 text-xl font-semibold text-gray-900">
+            Music Recommendation System (React & MongoDB)
+        </h3>
+
+        <p class="mb-4 text-gray-700">
+            Developed a <strong>full stack music recommendation system</strong> using
+            <strong>React</strong> for the frontend and <strong>MongoDB</strong> for data storage.
+            The application recommends music tracks based on <strong>user preferences</strong>,
+            listening history, and interaction patterns.
+        </p>
+
+        <p class="mb-4 text-gray-700">
+            Implemented <strong>user authentication</strong>, playlist management, and
+            <strong>personalized recommendation logic</strong>. The system dynamically updates
+            recommendations in real time, providing a responsive and engaging user experience
+            similar to modern music streaming platforms.
+        </p>
+
+        <div class="flex space-x-4">
+            <!-- GitHub Link -->
+            <a
+                href="https://github.com/Hithaish2003/music-recommendation-system"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn github"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 7 9.5.5.1.7-.2.7-.5v-1.4c-2.8.6-3.4-1.1-3.4-1.1-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1-.1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3 0-2.7 0 0 .8-.3 2.6 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 1.8-1.3 2.6-1 2.6-1 .4 1.4.1 2.4 0 2.7.6.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.5 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5C19.1 20.2 22 16.4 22 12 22 6.5 17.5 2 12 2z"/>
+                </svg>
+                GitHub
+            </a>
+
+            <!-- Demo -->
+            <a
+                href="https://github.com/Hithaish2003/music-recommendation-system#demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link-btn live-demo"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                Demo
+            </a>
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
     </section>
+
 <section id="certifications" class="bg-white">
-        <div class="mx-auto max-w-4xl">
-            <h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3 h-8 w-8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                Internships & Certifications
-            </h2>
-            <div class="space-y-6">
-                <div class="bg-white p-6 rounded-lg shadow-md internship-card">
-                    <h3 class="text-xl font-semibold text-gray-900">Internship: Analysing Large Datasets</h3>
-                    <p class="text-gray-700">Skill-Forge Pvt Ltd, Bangalore | July 2024 - August 2024</p>
-                    <p class="text-gray-600 mt-2">
-                        Completed an intensive internship focused on analyzing and manipulating large datasets. Gained practical experience with big data technologies and methodologies to extract valuable insights and prepare data for ML pipelines.
-                    </p>
-                    <a href="./pics/Internship.jpg" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-5 w-5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A5.5 5.5 0 0 1 7.5 3c1.74 0 3.41.81 4.5 2.09A5.5 5.5 0 0 1 16.5 3c3.89 0 7.5 3.19 7.5 6.46v.04c0 3.78-3.4 6.86-8.55 11.53L12 21.35z"></path></svg>
-                        View Certificate
+    <div class="mx-auto max-w-4xl">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="mr-3 h-8 w-8">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Internships, Certifications & Resume
+        </h2>
+
+        <div class="space-y-6">
+
+            <!-- Internship Card -->
+            <div class="bg-white p-6 rounded-lg shadow-md internship-card">
+                <h3 class="text-xl font-semibold text-gray-900">
+                    Internship: Analysing Large Datasets
+                </h3>
+
+                <p class="text-gray-700">
+                    Skill-Forge Pvt Ltd, Bangalore | July 2024 – August 2024
+                </p>
+
+                <p class="text-gray-600 mt-2">
+                    Completed an intensive internship focused on analyzing and manipulating
+                    large datasets. Gained hands-on experience with big data tools and techniques
+                    to extract insights and support machine learning pipelines.
+                </p>
+
+                <a href="./pics/Internship.jpg"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="view-cert-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="mr-2 h-5 w-5">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A5.5 5.5 0 0 1 7.5 3c1.74 0 3.41.81 4.5 2.09A5.5 5.5 0 0 1 16.5 3c3.89 0 7.5 3.19 7.5 6.46v.04c0 3.78-3.4 6.86-8.55 11.53L12 21.35z"></path>
+                    </svg>
+                    View Certificate
+                </a>
+            </div>
+            <!-- Tech Stack Card -->
+<div class="bg-white p-6 rounded-lg shadow-md internship-card tech-stack-card">
+    <h3 class="text-xl font-semibold text-gray-900 mb-4">
+        My Tech Stack
+    </h3>
+
+    <p class="text-gray-600 mb-4">
+        A visual overview of the tools, frameworks, and technologies I use
+        across Machine Learning, Data Engineering, and Full Stack development.
+    </p>
+
+    <div class="tech-stack-image-wrapper">
+        <img
+            src="./pics/TechStack.png"
+            alt="Machine Learning and Data Engineering Tech Stack"
+            class="tech-stack-image"
+            onerror="this.onerror=null; this.src='https://placehold.co/900x500/E5E7EB/111827?text=Tech+Stack';"
+        />
+    </div>
+</div>
+
+
+            <!-- Resume Card -->
+            <div class="bg-white p-6 rounded-lg shadow-md internship-card">
+                <h3 class="text-xl font-semibold text-gray-900">
+                    Resume
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    A detailed overview of my education, technical skills, projects,
+                    internships, and hands-on experience in Machine Learning, Data Engineering,
+                    and Full Stack Development.
+                </p>
+
+                <div class="flex space-x-4 mt-4">
+                    <!-- View Resume -->
+                    <a href="./docs/Hithaish_K_A.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="view-cert-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="mr-2 h-5 w-5">
+                            <rect width="20" height="14" x="2" y="7" rx="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        View Resume
+                    </a>
+
+                    <!-- Download Resume -->
+                    <a href="./docs/Hithaish_KA_Resume.pdf"
+                       download
+                       class="view-cert-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="mr-2 h-5 w-5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" x2="12" y1="15" y2="3"></line>
+                        </svg>
+                        Download Resume
                     </a>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
+
     <!-- Contact Section -->
     <section id="contact" class="bg-gray-100">
         <div class="mx-auto max-w-4xl">
@@ -378,5 +776,18 @@
             Built by <span style="color: #EF4444;">&hearts;</span> Hithaish.
         </p>
     </footer>
+    <script>
+    const toggle = document.getElementById("darkModeToggle");
+
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        toggle.textContent = 
+            document.body.classList.contains("dark")
+            ? "☀️ Light Mode"
+            : "🌙 Dark Mode";
+    });
+</script>
+
 </body>
 </html>
