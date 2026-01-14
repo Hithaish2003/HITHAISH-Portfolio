@@ -530,3 +530,448 @@ footer .text-sm {
 .view-cert-btn:hover svg {
     transform: scale(1.1); /* Makes the icon pop on hover */
 }
+/* =========================
+   PROJECT CARD FIX
+   ========================= */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Push buttons to bottom */
+.project-card-content .project-actions {
+    margin-top: auto;
+}
+
+
+/* =========================
+   PREMIUM DARK MODE
+   ========================= */
+
+body.dark {
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e5e7eb;
+}
+body.dark section {
+    background: transparent;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+    color: #f8fafc;
+    letter-spacing: 0.02em;
+}
+
+body.dark p,
+body.dark .about-content {
+    color: #cbd5f5;
+}
+body.dark .project-card,
+body.dark .skill-card,
+body.dark .internship-card {
+    background: linear-gradient(
+        180deg,
+        rgba(30, 41, 59, 0.95),
+        rgba(15, 23, 42, 0.95)
+    );
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+body.dark .project-card:hover {
+    transform: translateY(-6px) scale(1.015);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.85),
+        0 0 0 1px rgba(96, 165, 250, 0.4);
+}
+body.dark .skill-card {
+    background: rgba(30, 41, 59, 0.85);
+    color: #e2e8f0;
+}
+
+body.dark .skill-card:hover {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #22d3ee
+    );
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.5);
+}
+body.dark .project-link-btn.github {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
+}
+
+body.dark .project-link-btn.github:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.75);
+}
+
+body.dark .project-link-btn.live-demo {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+}
+
+body.dark .project-link-btn.live-demo:hover {
+    background: rgba(56, 189, 248, 0.25);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+}
+body.dark .btn-primary {
+    background: linear-gradient(135deg, #22d3ee, #2563eb);
+    color: #020617;
+    box-shadow: 0 10px 30px rgba(34, 211, 238, 0.6);
+}
+
+body.dark .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 45px rgba(34, 211, 238, 0.85);
+}
+
+body.dark .btn-secondary {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+body.dark .btn-secondary:hover {
+    background: rgba(56, 189, 248, 0.2);
+    color: #ffffff;
+}
+/* =========================
+   DARK MODE TOGGLE BUTTON
+   ========================= */
+
+.dark-mode-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 14px;
+    border-radius: 9999px;
+
+    background: linear-gradient(135deg, #2563eb, #22d3ee);
+    color: #020617;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+
+    box-shadow:
+        0 10px 30px rgba(34, 211, 238, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+    transition: all 0.3s ease;
+}
+
+
+.dark-mode-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow:
+        0 15px 45px rgba(34, 211, 238, 0.85),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+body.dark .dark-mode-btn {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #38bdf8;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.9),
+        0 0 0 1px rgba(56, 189, 248, 0.4);
+}
+.dark-mode-btn svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-btn:hover svg {
+    transform: rotate(20deg);
+}
+
+body.dark footer {
+    background: linear-gradient(180deg, #020617, #000000);
+    color: #94a3b8;
+}
+body,
+section,
+.project-card,
+.skill-card,
+.project-link-btn {
+    transition: all 0.35s ease;
+}
+
+/* =====================================================
+   DARK MODE – GET IN TOUCH (FULL PREMIUM STYLING)
+   ===================================================== */
+
+body.dark #contact {
+    background: radial-gradient(
+        circle at top,
+        #020617 0%,
+        #0f172a 60%,
+        #020617 100%
+    );
+}
+
+/* Floating contact card */
+body.dark #contact .rounded-lg {
+    background: linear-gradient(
+        145deg,
+        rgba(17, 24, 39, 0.96),
+        rgba(2, 6, 23, 0.96)
+    );
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.9),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Headings */
+body.dark #contact h2 {
+    color: #f8fafc;
+}
+
+/* Paragraph text */
+body.dark #contact p {
+    color: #cbd5f5;
+}
+
+/* Contact rows */
+body.dark .contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 16px;
+    border-radius: 14px;
+
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+
+    color: #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+/* Hover glow */
+body.dark .contact-info-item:hover {
+    transform: translateY(-2px) scale(1.02);
+    border-color: rgba(56, 189, 248, 0.45);
+    box-shadow:
+        0 0 25px rgba(56, 189, 248, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Icons */
+body.dark .contact-info-item svg {
+    color: #38bdf8;
+    flex-shrink: 0;
+}
+
+/* Links */
+body.dark .contact-info-item a {
+    color: #7dd3fc;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+body.dark .contact-info-item a:hover {
+    color: #bae6fd;
+    text-decoration: underline;
+}
+
+/* Social icons */
+body.dark .social-icon-link {
+    color: #94a3b8;
+    transition: all 0.3s ease;
+}
+
+body.dark .social-icon-link:hover {
+    color: #38bdf8;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 14px rgba(56, 189, 248, 0.85));
+}
+
+/* Section divider glow */
+body.dark #contact::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto 3rem;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(56, 189, 248, 0.6),
+        transparent
+    );
+}
+/* =====================================================
+   LIGHT MODE – GET IN TOUCH (PREMIUM STYLING)
+   ===================================================== */
+
+#contact {
+    background: radial-gradient(
+        circle at top,
+        #f8fafc 0%,
+        #f1f5f9 60%,
+        #f8fafc 100%
+    );
+}
+
+/* Floating contact card */
+#contact .rounded-lg {
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.98),
+        rgba(248, 250, 252, 0.98)
+    );
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    box-shadow:
+        0 20px 40px rgba(15, 23, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Headings */
+#contact h2 {
+    color: #0f172a;
+}
+
+/* Paragraph text */
+#contact p {
+    color: #475569;
+}
+
+/* Contact rows */
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 16px;
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+
+    color: #1e293b;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.contact-info-item:hover {
+    transform: translateY(-2px) scale(1.02);
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Icons */
+.contact-info-item svg {
+    color: #2563eb;
+    flex-shrink: 0;
+}
+
+/* Links */
+.contact-info-item a {
+    color: #2563eb;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.contact-info-item a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Social icons */
+.social-icon-link {
+    color: #475569;
+    transition: all 0.3s ease;
+}
+
+.social-icon-link:hover {
+    color: #2563eb;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.4));
+}
+
+/* Section divider */
+#contact::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto 3rem;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(37, 99, 235, 0.4),
+        transparent
+    );
+}
+/* Tech Stack Image Container */
+.tech-stack-image-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Tech Stack Image */
+.tech-stack-image {
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Hover Zoom Effect */
+.tech-stack-image-wrapper:hover .tech-stack-image {
+    transform: scale(1.12);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+.tech-stack-image-wrapper::after {
+    
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.082);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tech-stack-image-wrapper:hover::after {
+    opacity: 1;
+}
+body.dark .tech-stack-card {
+    background-color: #0f172a;
+}
+
+body.dark .tech-stack-card h3,
+body.dark .tech-stack-card p {
+    color: #e5e7eb;
+}
